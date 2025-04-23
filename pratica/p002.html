@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificador de Texto</title>
+</head>
+<body>
+    <h1>Modificador de Texto</h1>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="Enviar" onclick='modificar()'>
+    <div id="res">-</div>
+    <div id="res2">-</div>
+    <script>
+        function modificar() {
+            var texto = document.getElementById('txt')
+            var res = document.getElementById('res')
+            var res2 = document.getElementById('res2')
+            var palavra = texto.value
+            res.innerHTML = palavra.length
+            res2.innerHTML = palavra.toUpperCase()
+        }
+    </script>
+
+</body>
+</html>
