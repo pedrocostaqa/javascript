@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    Nascido em: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="resultado">
+        -
+    </div>
+
+    <script>
+        function verificar() {
+            var txtnac = document.getElementById('txtnac');
+            var resultado = document.querySelector('div#resultado')
+            var país = txtnac.value
+            resultado.innerHTML = `<p>Você escreveu <strong>${país}</strong></p>`
+            if (país == 'Brasil') {
+                resultado.innerHTML += `<p> Você é <strong>brasileiro!</strong></p>`
+            } else {
+                resultado.innerHTML += `<p> Você é <strong>estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
