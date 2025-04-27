@@ -20,6 +20,12 @@ section {
 div {
     padding: 10px;
 }
+
+#foto{ 
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+    }
 footer {
     color: white;
     text-align: center;
